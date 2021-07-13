@@ -22,6 +22,8 @@ public class PuzzleTester {
 
         // System.out.println(puzzle.randomString5());
 
-        System.out.println(Arrays.toString(puzzle.randomStringArr()));
+        // System.out.println(Arrays.toString(puzzle.randomStringArr()));
+
+        puzzle.randomString5();
     }
 }

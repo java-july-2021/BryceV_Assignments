@@ -82,9 +82,16 @@ public class PuzzleJava {
         }
         // System.out.println(randomCharArr);
         StringBuilder randomStr = new StringBuilder();
-        for (char randomChar : randomCharArr) {
+        String test = "";
+        String[] test2 = {"e", "r", "h", "y", "u"};
+        // for (int i = 0; i<5; i++) {
+        //     test = test.concat(test2[i]);
+        // }
+        for (double randomChar : randomCharArr) {
             randomStr.append(randomChar);
+            test+=randomChar;
         }
+        System.out.println(test);
         return randomStr.toString();
     }
 
