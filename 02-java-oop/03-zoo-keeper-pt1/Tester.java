@@ -9,6 +9,8 @@ public class Tester {
         // george.climb();
         // george.displayEnergy();
         Mammal m = new Mammal();
+        Gorilla g = new Gorilla();
         m.displayEnergy();
+        g.climb();
     }
 }
