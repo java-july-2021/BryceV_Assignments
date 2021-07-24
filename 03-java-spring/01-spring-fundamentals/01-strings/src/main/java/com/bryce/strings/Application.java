@@ -15,6 +15,7 @@ public class Application {
 	@RequestMapping("/")
 	public String welcome() {
 		return "Hello client! How are you doing?";
+		
 	}
 	
 	@RequestMapping("/random")

@@ -5,11 +5,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Test Search</title>
+<title>Hello Human</title>
 </head>
 <body>
-	<h1>Welcome, everyone!</h1>
-	<hr>
-	<p>You searched for: <c:out value="${search}"/>
+<h1>Hello, <c:out value="${firstname}"/> <c:out value="${lastname}"/></h1>
 </body>
 </html>

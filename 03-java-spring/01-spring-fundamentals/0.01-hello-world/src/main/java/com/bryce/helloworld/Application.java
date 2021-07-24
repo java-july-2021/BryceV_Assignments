@@ -6,16 +6,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
+//@RestController
 public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
-	
-	@RequestMapping("/")
-	public String hello() {
-		return "Hello World";
-	}
+//	
+//	@RequestMapping("/")
+//	public String hello() {
+//		return "Hello World";
+//	}
 
 }
