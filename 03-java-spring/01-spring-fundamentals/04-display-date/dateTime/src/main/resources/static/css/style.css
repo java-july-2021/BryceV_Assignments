@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+.center {
+	margin: auto;
+	margin-top: 10%;
+	width: 60%;
+	padding: 10px;
+}
+.date {
+	color: blue;
+	text-align: center;
+	font-size: 45px;
+}
+.time {
+	color: green;
+	text-align: center;
+	font-size: 45px;
+}
+a {
+	background-color: red;
+	color: white;
+  	padding: 14px 25px;
+  	border-radius: 7px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+}
