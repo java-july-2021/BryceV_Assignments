@@ -3,7 +3,6 @@ package com.bryce.loginreg.services;
 import java.util.Optional;
 
 import org.mindrot.jbcrypt.BCrypt;
-//import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.stereotype.Service;
 import com.bryce.loginreg.models.User;
 import com.bryce.loginreg.repositories.UserRepository;
