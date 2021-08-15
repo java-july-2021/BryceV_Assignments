@@ -11,19 +11,22 @@
 <body>
 	<h1>Register!</h1>
     
-    <p><form:errors path="user.*"/></p>
+    <%-- <p><form:errors path="user.*"/></p> --%>
     
     <form:form method="POST" action="/registration" modelAttribute="user">
+            <p><form:errors path="email"/></p>
         <p>
             <form:label path="email">Email:</form:label>
             <form:input type="email" path="email"/>
         </p>
+            <p><form:errors path="password"/></p>
         <p>
             <form:label path="password">Password:</form:label>
             <form:password path="password"/>
         </p>
         <p>
             <form:label path="passwordConfirmation">Password Confirmation:</form:label>
+            <%-- <form:errors path="passwordConfirmation"/> --%>
             <form:password path="passwordConfirmation"/>
         </p>
         <input type="submit" value="Register!"/>

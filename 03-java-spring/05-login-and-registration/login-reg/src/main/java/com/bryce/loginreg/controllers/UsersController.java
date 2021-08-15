@@ -3,6 +3,7 @@ package com.bryce.loginreg.controllers;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -13,10 +14,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.bryce.loginreg.models.User;
 import com.bryce.loginreg.services.UserService;
+import com.bryce.loginreg.validators.Validator;
 
 @Controller
 public class UsersController {
-	private final UserService userService;
+	@Autowired
+	private UserService userService;
+	@Autowired
+	private Validator validator;
 	
 	public UsersController(UserService userService) {
 		this.userService = userService;
@@ -34,6 +39,7 @@ public class UsersController {
 	@RequestMapping(value="/registration", method=RequestMethod.POST)
 	public String registerUser(@Valid @ModelAttribute("user") User user, BindingResult result, HttpSession session) {
 //		IF RESULT HAS ERRORS, RETURN THE REGISTRATION PAGE
+		validator.validate(user, result);
 		if(result.hasErrors()) {
 			return "registrationPage.jsp";
 		}
